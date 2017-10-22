@@ -1,0 +1,33 @@
+{
+  "name": "bfx-facs-lru",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Bitfinex LRU Facility",
+  "author": {
+    "name": "prdn",
+    "email": "paolo@bitfinex.com"
+  },
+  "main": "index.js",
+  "keywords": [
+    "bitfinex"
+  ],
+  "dependencies": {
+    "bfx-facs-base": "git+https://github.com/bitfinexcom/bfx-facs-base.git",
+    "lodash": "^4.17.4",
+    "lru": "^3.1.0"
+  },
+  "engine": {
+    "node": ">=6.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitfinexcom/bfx-facs-lru.git"
+  },
+  "maintainers": [
+    {
+      "name": "prdn",
+      "email": "paolo@bitfinex.com"
+    }
+  ]
+}
