@@ -1,7 +1,8 @@
 'use strict'
 
-const LRU = require('lru')
+const async = require('async')
 const Base = require('bfx-facs-base')
+const _LRU = require('lru')
 
 class LRU extends Base {
   constructor (caller, opts, ctx) {
@@ -15,7 +16,7 @@ class LRU extends Base {
     async.series([
       next => { super._start(next) },
       next => {
-        this.cache = new LRU(this.opts)
+        this.cache = new _LRU(this.opts)
         next()
       }
     ], cb)
