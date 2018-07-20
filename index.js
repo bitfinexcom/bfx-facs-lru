@@ -39,6 +39,10 @@ class LRU extends Base {
     return this.cache.set(k, v)
   }
 
+  remove (k) {
+    return this.cache.remove(k)
+  }
+
   clear () {
     this.cache.clear()
   }
