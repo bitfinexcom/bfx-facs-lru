@@ -1,6 +1,6 @@
 {
   "name": "bfx-facs-lru",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "Bitfinex LRU Facility",
   "author": {
@@ -12,7 +12,7 @@
     "bitfinex"
   ],
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^2.6.1",
     "bfx-facs-base": "git+https://github.com/bitfinexcom/bfx-facs-base.git",
     "lodash": "^4.17.10",
     "lru": "^3.1.0"
