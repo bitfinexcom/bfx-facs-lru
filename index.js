@@ -27,6 +27,8 @@ class LRU extends Base {
       next => { super._stop(next) },
       next => {
         this.clear()
+        delete this.cache
+        next()
       }
     ], cb)
   }
