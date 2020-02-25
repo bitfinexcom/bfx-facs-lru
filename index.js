@@ -37,6 +37,10 @@ class LRU extends Base {
     return this.cache.get(k)
   }
 
+  peek (k) {
+    return this.cache.peek(k)
+  }
+
   set (k, v) {
     return this.cache.set(k, v)
   }
