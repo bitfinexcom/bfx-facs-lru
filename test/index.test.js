@@ -8,6 +8,8 @@ test('stores, reads, and drops cache entries', function (t) {
   const caller = { ctx: { root: '' } }
   const fac = new Fac(caller, { max: 2 }, {})
 
+  t.teardown(() => fac.stop(() => {}))
+
   t.plan(7)
 
   fac.start((err) => {

@@ -26,7 +26,7 @@ class LRU extends Base {
     async.series([
       next => { super._stop(next) },
       next => {
-        this.clear()
+        if (this.cache) this.clear()
         delete this.cache
         next()
       }
