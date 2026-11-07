@@ -1,6 +1,6 @@
 {
   "name": "@bitfinex/bfx-facs-lru",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "description": "Bitfinex LRU Facility",
   "author": {
@@ -11,13 +11,23 @@
   "keywords": [
     "bitfinex"
   ],
+  "scripts": {
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "brittle-node test/**/*.test.js",
+    "lint": "bfx-lint-js",
+    "lint:fix": "bfx-lint-js --fix"
+  },
   "dependencies": {
-    "@bitfinex/bfx-facs-base": "git+https://github.com/bitfinexcom/bfx-facs-base.git",
-    "async": "^3.2.1",
+    "@bitfinex/bfx-facs-base": "git+https://github.com/bitfinexcom/bfx-facs-base.git#v2.0.0",
+    "async": "^3.2.6",
     "lru": "3.1.0"
   },
+  "devDependencies": {
+    "@bitfinex/lint-js": "^1.1.0",
+    "brittle": "^4.5.0"
+  },
   "engines": {
-    "node": ">=16.0"
+    "node": ">=22.0"
   },
   "license": "Apache-2.0",
   "repository": {
